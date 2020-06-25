@@ -6,14 +6,15 @@ using DatingApp_API.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace DatingApp.API.Controllers
+namespace DatingApp_API.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    // assist in controlling API functionality
+    [ApiController] 
     public class ValuesController : ControllerBase
     {
-        private readonly ValueContext _context;
-        public ValuesController(ValueContext context)
+        private readonly DataContext _context;
+        public ValuesController(DataContext context)
         {
 
             _context = context;

@@ -4,14 +4,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp_API.Data
 {
-    public class ValueContext : DbContext
+    public class DataContext : DbContext
     {
-        public ValueContext(DbContextOptions<ValueContext> options) 
+        public DataContext(DbContextOptions<DataContext> options) 
             : base(options)
         {
         }
 
         public DbSet<Value> Values { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 
 }
