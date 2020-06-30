@@ -1,0 +1,1 @@
+DTOs are used to shape the data we are returning and reciving between client and server
